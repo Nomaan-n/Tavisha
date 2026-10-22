@@ -1,13 +1,74 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>For Tavisha 💖</title><style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(135deg,#ffdde1,#ee9ca7);color:#3c2830;text-align:center;overflow-x:hidden}section{padding:64px 20px;min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center}h1{font-size:clamp(2.4rem,8vw,4.5rem);margin:.2em 0}h2{font-size:clamp(1.7rem,5vw,2.6rem)}p{line-height:1.65}.btn{background:#ff4b70;color:white;padding:13px 25px;border:0;border-radius:30px;font-size:1.05rem;cursor:pointer;box-shadow:0 8px 22px #b7476330;transition:.2s}.btn:hover{transform:translateY(-2px);background:#f52e5b}.note{color:#76515c;font-size:.92rem}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:18px;width:min(100%,1050px);margin:24px auto}.photo-card{background:#fff9;border:1px solid #ffffffa6;padding:10px;border-radius:20px;box-shadow:0 12px 30px #8b34401c}.gallery img{display:block;width:100%;height:350px;object-fit:cover;border-radius:14px;cursor:pointer;transition:.25s}.gallery img:hover{transform:scale(1.015)}.compliment{display:none;padding:5px 8px;font-style:italic}.fun-buttons{position:relative;width:min(100%,560px);height:170px;margin-top:24px}.fun-btn{position:absolute;border:0;border-radius:24px;padding:12px 24px;color:#fff;font-size:1.05rem;cursor:pointer;background:#4b9fe8}#yesBtn{left:20%;top:45px}#noBtn{left:60%;top:45px;background:#765a70}.message-box{background:#ffffffc9;padding:clamp(20px,5vw,40px);border-radius:24px;max-width:720px;text-align:left;box-shadow:0 15px 45px #9c3f5120;font-size:1.1rem;line-height:1.8}#typed{white-space:pre-wrap;min-height:80px}.quiz button{margin:8px;padding:10px 20px;border:0;border-radius:20px;background:#ff4b70;color:#fff;font-size:1rem}footer{padding:24px;background:#ffffff45}.hidden{display:none!important}</style></head><body>
-<section><p>♡ a little something made just for you ♡</p><h1>Hey Tavisha 👋</h1><p>I made something little for you...</p><button class="btn" onclick="document.querySelector('#gallery').scrollIntoView({behavior:'smooth'})">Click Me 😏</button><p class="note">(Don’t worry, nothing scary ahead 😉)</p></section>
-<section id="gallery"><h2>This is my version of Vogue ✨</h2><p class="note">Tap a photo to reveal a little thought 💗</p><div class="gallery">
-<div class="photo-card"><img src="/Tavisha/tavisha1.jpg" alt="Tavisha in a yellow top" onclick="reveal(this)"><p class="compliment">That whole look? Effortlessly iconic 💛</p></div>
-<div class="photo-card"><img src="/Tavisha/tavisha2.jpg" alt="Tavisha in a black outfit" onclick="reveal(this)"><p class="compliment">The smile says everything 🖤</p></div>
-<div class="photo-card"><img src="/Tavisha/tavisha3.jpg" alt="Tavisha in an orange traditional outfit" onclick="reveal(this)"><p class="compliment">Main-character energy, no debate 🧡</p></div>
-<div class="photo-card"><img src="/Tavisha/tavisha4.jpg" alt="Tavisha in a black evening dress" onclick="reveal(this)"><p class="compliment">Okay, this look absolutely understood the assignment ✨</p></div>
-</div><p class="note">Every photo deserves its own moment 🥹</p></section>
-<section><h2>Do you like surprises? 🎁</h2><p class="note">Go ahead, try saying no...</p><div class="fun-buttons"><button id="yesBtn" class="fun-btn" onclick="showMessage()">Yes 😍</button><button id="noBtn" class="fun-btn" onpointerenter="moveNo()" onclick="moveNo()">No 🙅‍♀️</button></div><p class="note">(Told you the “No” button wouldn’t behave 😂)</p></section>
-<section id="message" class="hidden"><div class="message-box"><h2>Here’s the truth 💌</h2><p id="typed"></p></div><div class="quiz"><h3>Did you like this little something?</h3><button onclick="alert('YAYAYAYAY 💖')">Yes</button><button onclick="alert('Okay, noted 😅')">No</button></div><div style="margin-top:28px"><button class="btn" onclick="document.querySelector('#surpriseText').classList.remove('hidden')">One last surprise? 👀</button><p id="surpriseText" class="hidden"><strong>Okay fine... you officially deserve all the good things 💖</strong></p></div></section>
-<footer>Made with ❤️ and a bit of JavaScript magic</footer><script>
-function reveal(img){const p=img.nextElementSibling;p.style.display=p.style.display==='block'?'none':'block'}function moveNo(){const b=document.querySelector('#noBtn'),c=b.parentElement;b.style.left=Math.random()*Math.max(0,c.clientWidth-b.offsetWidth)+'px';b.style.top=Math.random()*Math.max(0,c.clientHeight-b.offsetHeight)+'px'}function showMessage(){const m=document.querySelector('#message');m.classList.remove('hidden');m.scrollIntoView({behavior:'smooth'});const text="You have a way of making ordinary moments feel a little more special. This tiny website is just a reminder to keep smiling, keep being yourself, and never forget how uniquely you shine. 💖";const out=document.querySelector('#typed');out.textContent='';let i=0;function type(){if(i<text.length){out.textContent+=text[i++];setTimeout(type,35)}}type()}</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffb7cf">
+<title>Happy Birthday, Tavisha! 🎂</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(135deg,#fff0b8 0%,#ffd4e5 48%,#d9d5ff 100%);color:#4a3150;text-align:center;overflow-x:hidden}
+section{padding:64px 20px;min-height:86vh;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative}
+.hero{min-height:100svh;background:radial-gradient(ellipse at top,#fff9d9 0%,transparent 60%)}
+h1{font-size:clamp(2.6rem,10vw,5.5rem);line-height:1.05;margin:.2em 0;color:#b62f73;text-shadow:0 4px 0 #fff8}
+h2{font-size:clamp(1.8rem,6vw,3rem);margin:.25em 0;color:#9e3678}
+h3{color:#9e3678}p{line-height:1.7}.eyebrow{font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8b568b;font-size:.82rem}
+.btn{background:#ed4f91;color:#fff;padding:14px 25px;border:0;border-radius:999px;font-size:1.05rem;font-weight:750;cursor:pointer;box-shadow:0 8px 22px #a52d6940;transition:transform .2s}.btn:hover{transform:translateY(-3px) rotate(-1deg)}
+.note{color:#795d7b;font-size:.94rem}.hero-icons{font-size:clamp(2rem,7vw,3.5rem);margin:12px 0;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-9px) rotate(3deg)}}
+.pill{display:inline-block;background:#ffffffb8;border:1px solid #fff;padding:8px 15px;border-radius:999px;font-weight:700;margin:8px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:18px;width:min(100%,1050px);margin:24px auto}
+.photo-card{background:#ffffffc9;border:2px solid #fff;padding:10px;border-radius:24px;box-shadow:0 12px 30px #713b6b20;transform:rotate(var(--tilt,0deg));transition:transform .2s}
+.photo-card:nth-child(odd){--tilt:-1deg}.photo-card:nth-child(even){--tilt:1deg}.photo-card:hover{transform:translateY(-5px) rotate(0)}
+.gallery img{display:block;width:100%;height:350px;object-fit:cover;border-radius:16px;cursor:pointer}.compliment{display:none;padding:5px 8px;font-weight:650;color:#9e3678}
+.birthday-card{width:min(100%,760px);padding:clamp(24px,6vw,48px);background:#ffffffc9;border:2px solid #fff;border-radius:30px;box-shadow:0 18px 50px #713b6b20}
+.birthday-card p{font-size:1.08rem}.hidden{display:none!important}
+footer{padding:28px;background:#ffffff70;font-weight:650}
+.confetti{position:absolute;top:12%;left:8%;font-size:1.6rem;pointer-events:none;animation:bob 3s infinite}.confetti.c2{left:auto;right:9%;top:23%;animation-delay:.5s}.confetti.c3{left:14%;top:auto;bottom:14%;animation-delay:1s}.confetti.c4{left:auto;right:12%;top:auto;bottom:12%;animation-delay:1.4s}
+@media(max-width:480px){section{padding:54px 16px;min-height:80vh}.gallery img{height:320px}}
+</style>
+</head>
+<body>
+<section class="hero">
+<span class="confetti">🎈</span><span class="confetti c2">🎉</span><span class="confetti c3">✨</span><span class="confetti c4">🎁</span>
+<p class="eyebrow">Today is all about you</p>
+<div class="hero-icons">🎂 🎀 🥳</div>
+<h1>Happy Birthday,<br>Tavisha!</h1>
+<p>Another year of being iconic, funny, beautiful, and completely <em>you</em>. 💖</p>
+<div><span class="pill">✨ Main character day</span><span class="pill">🍰 Extra cake, please</span></div>
+<button class="btn" onclick="document.querySelector('#gallery').scrollIntoView({behavior:'smooth'})">Let’s celebrate! 🎉</button>
+<p class="note">A tiny birthday page made to bring you a big smile.</p>
+</section>
+
+<section id="gallery">
+<p class="eyebrow">The birthday photo dump 📸</p>
+<h2>Serving looks, as usual ✨</h2>
+<p class="note">Tap any photo for a birthday compliment. It's your day, so obviously the spotlight is yours.</p>
+<div class="gallery">
+<div class="photo-card"><img src="/Tavisha/tavisha1.jpg" alt="Tavisha in a yellow top" onclick="reveal(this)"><p class="compliment">Sunshine in human form 💛</p></div>
+<div class="photo-card"><img src="/Tavisha/tavisha2.jpg" alt="Tavisha in a black outfit" onclick="reveal(this)"><p class="compliment">Cool-girl energy: absolutely unmatched 🖤</p></div>
+<div class="photo-card"><img src="/Tavisha/tavisha3.jpg" alt="Tavisha in an orange traditional outfit" onclick="reveal(this)"><p class="compliment">Festive, fabulous, and fully the moment 🧡</p></div>
+<div class="photo-card"><img src="/Tavisha/tavisha4.jpg" alt="Tavisha in a black evening dress" onclick="reveal(this)"><p class="compliment">Birthday queen behaviour. No notes. 👑</p></div>
+</div>
+<span class="pill">📷 Four looks. One absolute star.</span>
+</section>
+
+<section>
+<div class="birthday-card">
+<div style="font-size:3rem">🎁</div>
+<p class="eyebrow">A little birthday wish</p>
+<h2>Make a wish! 🌟</h2>
+<p>May this new chapter bring you belly laughs, unexpected happy moments, good people, big wins, peaceful days, and plenty of reasons to celebrate yourself.</p>
+<p>May your cake be delicious, your pictures turn out perfect, and your year be full of stories you’ll love telling. 💐</p>
+<button class="btn" onclick="revealWish()">Open your birthday surprise 🎊</button>
+<p id="wish" class="hidden"><strong>🥳 Official birthday rule: today you get extra cake, extra compliments, and absolutely zero boring vibes. Happy Birthday, Tavisha! 🎂💗</strong></p>
+</div>
+</section>
+
+<footer>Made with 🎂, confetti, and birthday energy ✨</footer>
+<script>
+function reveal(img){const p=img.nextElementSibling;p.style.display=p.style.display==='block'?'none':'block'}
+function revealWish(){const w=document.querySelector('#wish');w.classList.remove('hidden');w.scrollIntoView({behavior:'smooth',block:'center'})}
+</script>
+</body>
+</html>
